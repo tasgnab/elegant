@@ -21,11 +21,9 @@ class index extends CI_Controller {
 
 	function __construct(){
 		parent::__construct();
-		$this->load->model('m_category');
 	}
 
 	public function index(){
-		$data['allCategory'] = $this->m_category->getCategoryTree();
-		$this->load->view('index',$data);
+		$this->load->view('welcome_message');
 	}
 }
