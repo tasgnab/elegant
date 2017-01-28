@@ -1,114 +1,70 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');?>
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Elegant Tailor</title>
-		<meta name="description" content="">
-		<meta name="author" content="templatemo">
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
-		<link href="assets/css/elegant.css" rel="stylesheet">
-		<link href="assets/css/font-awesome.min.css" rel="stylesheet">
-		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
-		<link href="assets/css/templatemo-style.css" rel="stylesheet">
-		<link href="assets/css/scrolling-nav.css" rel="stylesheet">
-	</head>
+	<?php include_once('common/header.php'); ?>
 	<body id="page-top">
-		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<?php include_once('common/nav.php'); ?>
+
+		<section id="slider"><!--slider-->
 			<div class="container">
-				<div class="navbar-header page-scroll">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="elegant-navbar-brand navbar-brand page-scroll" href="#page-top"><span class="gold-text">elegant</span> tailor</a>
-				</div>
-
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse navbar-ex1-collapse">
-					<ul class="nav navbar-nav">
-						<!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-						<li class="hidden">
-							<a class="page-scroll" href="#page-top"></a>
-						</li>
-						<li>
-							<a class="page-scroll" href="#about">About</a>
-						</li>
-						<li>
-							<a class="page-scroll" href="#services">Services</a>
-						</li>
-						<li>
-							<a class="page-scroll" href="#contact">Contact</a>
-						</li>
-					</ul>
-				</div>
-				<!-- /.navbar-collapse -->
-			</div>
-			<!-- /.container -->
-		</nav>
-
-		<section id="intro" class="intro-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<h1>Scrolling Nav</h1>
-					<p><strong>Usage Instructions:</strong> Make sure to include the <code>scrolling-nav.js</code>, <code>jquery.easing.min.js</code>, and <code>scrolling-nav.css</code> files. To make a link smooth scroll to another section on the page, give the link the <code>.page-scroll</code> class and set the link target to a corresponding ID on the page.</p>
-					<a class="btn btn-default page-scroll" href="#about">Click Me to Scroll Down!</a>
-				</div>
-			</div>
-		</div>
-	</section>
-
-		<!-- "New Arrivals" -->
-		<section id="about" class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<h2 class="text-uppercase">New Arrivals</h2>
-					<hr class="templatemo-section-header-hr">
-					<p class="text-uppercase templatemo-section-subheader">View All Products</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center">
-					<div class="new-arrival-container">
-						<div class="new-arrival-overlay">
-							<h3 class="text-uppercase new-arrival-title">
-								<span class="font-script">Summer</span>
-								<span class="smaller-text">Collection</span>
-							</h3>
+				<div class="row">
+					<div class="col-sm-12">
+						<div id="slider-carousel" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#slider-carousel" data-slide-to="0" class="active"></li>
+								<li data-target="#slider-carousel" data-slide-to="1"></li>
+								<li data-target="#slider-carousel" data-slide-to="2"></li>
+							</ol>
+							<div class="carousel-inner">
+								<div class="item active">
+									<div class="col-sm-6">
+										<h1><span class="gold-text">E</span>-SHOPPER</h1>
+										<h2>Free E-Commerce Template</h2>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+										<button type="button" class="btn btn-default get">Get it now</button>
+									</div>
+									<div class="col-sm-6">
+										<img src="upload/images/slider/girl1.jpg" class="girl img-responsive" alt="" />
+									</div>
+								</div>
+								<div class="item">
+									<div class="col-sm-6">
+										<h1><span class="gold-text">E</span>-SHOPPER</h1>
+										<h2>100% Responsive Design</h2>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+										<button type="button" class="btn btn-default get">Get it now</button>
+									</div>
+									<div class="col-sm-6">
+										<img src="upload/images/slider/girl2.jpg" class="girl img-responsive" alt="" />
+									</div>
+								</div>
+								
+								<div class="item">
+									<div class="col-sm-6">
+										<h1><span class="gold-text">E</span>-SHOPPER</h1>
+										<h2>Free Ecommerce Template</h2>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+										<button type="button" class="btn btn-default get">Get it now</button>
+									</div>
+									<div class="col-sm-6">
+										<img src="upload/images/slider/girl3.jpg" class="girl img-responsive" alt="" />
+									</div>
+								</div>
+								
+							</div>
+							
+							<a href="#slider-carousel" class="left control-carousel hidden-xs" data-slide="prev">
+								<i class="fa fa-angle-left"></i>
+							</a>
+							<a href="#slider-carousel" class="right control-carousel hidden-xs" data-slide="next">
+								<i class="fa fa-angle-right"></i>
+							</a>
 						</div>
-						<img src="assets/img/new-arrival-1.jpg" alt="New Arrival 1" class="img-responsive">
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center">
-					<div class="new-arrival-container">
-						<div class="new-arrival-overlay">
-							<h3 class="text-uppercase new-arrival-title">
-								<span class="smaller-text bordered-text">Best</span>
-								<span><b>Quality</b></span>
-							</h3>
-						</div>
-						<img src="assets/img/new-arrival-2.jpg" alt="New Arrival 2" class="img-responsive">
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center">
-					<div class="new-arrival-container">
-						<div class="new-arrival-overlay">
-							<h3 class="text-uppercase new-arrival-title">
-								<span class="font-script">Autumn</span>
-								<span class="smaller-text">Collection</span>
-							</h3>
-						</div>
-						<img src="assets/img/new-arrival-3.jpg" alt="New Arrival 3" class="img-responsive">
+						
 					</div>
 				</div>
 			</div>
-		</section> <!-- end "New Arrivals" -->
+		</section><!--/slider-->
 
 		<!-- "Product Type" -->
 		<section id="services" class="templatemo-gray-bg">
@@ -117,7 +73,7 @@
 					<div class="col-lg-12">
 						<h2 class="text-uppercase">Product Type</h2>
 						<hr class="templatemo-section-header-hr">
-						<p class="text-uppercase templatemo-section-subheader">View All Products</p>
+						<p class="text-uppercase templatemo-section-subheader">Our collections</p>
 					</div>
 				</div>
 				<div class="row">
@@ -245,21 +201,6 @@
 			</div>
 		</section> <!-- end "Our Products" -->
 
-		<!-- "About Us" -->
-		<section class="templatemo-dark-bg">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12 text-center">
-						<h2 class="text-uppercase gold-text">About us</h2>
-						<hr class="templatemo-about-hr">
-						<p class="templatemo-about-subtitle">View More Details</p>
-						<hr class="templatemo-about-hr">
-						<p class="gray-text about-us-text">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non	mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-					</div>
-				</div>
-			</div>
-		</section> <!-- end "About Us" -->
-
 		<footer class="text-center">
 			<p class="text-uppercase">
 				Copyright &copy; 2084 Company Name 
@@ -267,14 +208,14 @@
 			</p>
 		</footer>
 
-		<!-- JS -->
-		<script type="text/javascript" src="assets/js/jquery-1.11.2.min.js"></script>		<!-- jQuery -->
-		<script type="text/javascript" src="assets/js/templatemo-script.js"></script>		<!-- Templatemo Script -->
-		<!-- Bootstrap Core JavaScript -->
-	<script src="assets/js/bootstrap.min.js"></script>
-
-	<!-- Scrolling Nav JavaScript -->
-	<script src="assets/js/jquery.easing.min.js"></script>
-	<script src="assets/js/scrolling-nav.js"></script>
+	<?php include_once('common/jquery.php'); ?>
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$('.my-slider').unslider({
+				autoplay: false,
+				infinite: true
+			});
+		});
+	</script>
 	</body>
 </html>

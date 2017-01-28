@@ -7,7 +7,7 @@
 var map = '';
 var center;
 
-function initialize() {
+function initMap() {
     var mapOptions = {
       zoom: 16,
       center: new google.maps.LatLng(13.758468,100.567481),
@@ -32,7 +32,7 @@ function calculateCenter() {
 function loadGoogleMap(){
     var script = document.createElement('script');
     script.type = 'text/javascript';
-    script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' + 'callback=initialize';
+    script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCyZEz7gs6NhXVdhakb_Ik8ejIttOswerw&callback=initMap';
     document.body.appendChild(script);
 }
 

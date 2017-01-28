@@ -1,4 +1,74 @@
 .elegant-navbar-brand{
-	text-transform: uppercase;
-	font-weight: 700;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#about.container{
+  padding-top: 50px;
+}
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+/* button */
+.btn{
+	background-color: #D0AF51;
+	color: #FFF;
+}
+/* carousel */
+.carousel-indicators li {
+  background: #D0AF51;
+  opacity: 0.5;
+}
+
+.carousel-indicators li.active {
+  background: #D0AF51;
+  opacity: 1;
+}
+
+.control-carousel {
+  position: absolute;
+  top: 50%;
+  font-size: 60px;
+  color: #C2C2C1;
+}
+
+.right{
+  right: 0;
+}
+
+#slider {
+  padding-bottom: 45px;
+}
+
+.item{
+  padding-left: 100px;
+}
+
+.item h1 {
+  color: #000;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3.4em;
+  margin-top: 115px;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+
+.item h2 {
+  color: #363432;
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 22px;
+  margin-top: 10px;
+}
+
+.item  p {
+  color:#363432;
+  font-size:16px;
+  font-weight:300;
+  font-family: 'Roboto', sans-serif;
 }

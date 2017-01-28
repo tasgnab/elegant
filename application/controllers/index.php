@@ -26,4 +26,8 @@ class index extends CI_Controller {
 	public function index(){
 		$this->load->view('welcome_message');
 	}
+
+	public function about_us(){
+		$this->load->view('about_us');
+	}
 }
